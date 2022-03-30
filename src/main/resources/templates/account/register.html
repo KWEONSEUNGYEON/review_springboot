@@ -16,26 +16,17 @@
 
 <body>
   <div class="container">
-    <h1>Login</h1>
-    <form th:action="@{/account/login}" method="post">
+    <h1>회원가입</h1>
+    <form th:action="@{/account/register}" method="post">
       <div class="form-control">
         <label for="username">ID</label>
         <input type="text" id="username" name="username" required>
       </div>
-      
       <div class="form-control">
         <label for="password">PASSWORD</label>
         <input type="password" id="password" name="password" required>
-        <div class="error-control" th:if="${param.error}">
-          Invalid username and password.
-        </div>
-        <div th:if="${param.logout}">
-          You have been logged out.
-        </div>
       </div>
-
-      <button class="btn" type="submit">Login</button>
-      <p class="text">Don't have an account? <a th:href="@{/account/register}">Register</a></p>
+      <button class="btn" type="submit">회원가입</button>
 
     </form>
   </div>

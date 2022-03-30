@@ -75,6 +75,7 @@ body {
   padding: 15px 0;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .form-control input:focus,
@@ -84,9 +85,15 @@ body {
 }
 
 .form-control label {
-  position: absolute;
-  top: 10px;
-  left: 0; 
+  position: relative;
+}
+
+.error-control {
+  background-color: rgb(252, 0, 0);
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font
 }
 
 /* .form-control label span {
